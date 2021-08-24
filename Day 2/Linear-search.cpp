@@ -24,7 +24,7 @@ int main()
     int arr[n];
     for (int i = 0; i < n; i++)
     {
-        cout<<"Enter the value of "<<i<<" th element of array. ";
+        cout<<"Enter the value of "<<i<<" th element of array: ";
         cin>>arr[i];
         cout<<endl;
     }
