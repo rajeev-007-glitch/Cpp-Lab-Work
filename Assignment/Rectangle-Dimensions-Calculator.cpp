@@ -1,25 +1,20 @@
 #include<iostream>
 using namespace std;
-float c_f(float);
-float f_c(float);
+
+
 int main()
 {
-  float temp;
-  cout<<"\nEnter tempreture in celsius : ";
-  cin>>temp;
-  cout<<"Tempreture in fahrenheit is : "<<c_f(temp);
-  cout<<"\n\nEnter tempreture in faherenheit : ";
-  cin>>temp;
-  cout<<"Tempreture in celsius is : "<<f_c(temp);
+  float ar, pr, l, b;
+
+  cout<<"Enter the length and breadth of your rectangle: ";
+  cin>>l>>b;
+
+  ar = l*b;
+  pr = 2*(l+b);
+
+  cout<<"Area of your rectangle is: "<<ar<<endl
+  <<"and the Perimeter is: "<<pr;
+
+
   return 0;
-}
-float c_f(float celsius)
-{
-  float fahrenheit=(celsius*9.0)/5.0+32;
-  return fahrenheit;
-}
-float f_c(float fahrenheit)
-{
-  float celsius=5.0*(fahrenheit-32)/9.0;
-  return celsius;
 }
